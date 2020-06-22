@@ -1,0 +1,412 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+main {
+    padding: 10px 30px 40px 30px;
+}
+
+header {
+    height: 65px;
+    background-image: url("../images/header-background.jpg");
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+button {
+    /* margin-top: 15px; */
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+h1 a span {
+    font-weight: 400;
+}
+
+h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 7px;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 400;
+    width: 100%;
+}
+
+#disconnect {
+    display: none;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.open {
+    display : initial;
+}
+
+.div-group {
+    -webkit-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.1);
+    padding: 25px;
+}
+
+.nbRepetition {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 0;
+}
+
+thead, tbody, tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+img {
+    width: 43%
+}
+
+table {
+    width: 100%;
+}
+
+#workout, #profilButton, #favoriteButton, #search, #showCreation, .workoutMoment {
+    display: none;
+}
+
+#login, #register, #workout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f19f41;
+    border-radius: 17px;
+    margin: 15px 0 45px;
+    font-weight: 600;
+}
+
+label, input {
+    margin-bottom: 7px;
+}
+
+label {
+    margin-top: 7px;
+}
+
+#login h2, #register h2 {
+    border-bottom: 1px solid #5f5f5f;
+    max-width: 200px;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+#navigation {
+    margin-right: 10px;
+}
+
+#showCreation {
+    background-color: #48c348;
+    color: #ffffff;
+    padding: 10px 15px;
+    margin: 10px 0 20px;
+    border-radius: 17px;
+    text-align: center;
+    justify-content: center;
+}
+
+#showCreation span {
+    font-weight: 700;
+}
+
+#buttonWorkout {
+    margin-top: 20px;
+}
+
+.deleteExercise {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+#nbRepetition {
+    margin-top: 10px;
+}
+
+.creationImage {
+    border: 1px solid #000000;
+    border-radius: 15px;
+    padding: 4px;
+    margin-right: 7px;
+    background-color: #ffd377;
+    max-width: 120px;
+    width: 35%;
+}
+
+.exercise-number {
+    width: 55px;
+    margin-right: 10px;
+}
+
+#nbRepetition .container-div:not(:first-child) {
+    border-top: 1px solid #000000;
+}
+
+.container-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.active-pink-4 input[type=text]:focus:not([readonly]) {
+    border: 1px solid #fd9300;
+    box-shadow: 0 1px 0 0 #fd9300;
+}
+
+.active-pink input[type=text] {
+    border-bottom: 1px solid #fd9300;
+    box-shadow: 0 1px 0 0 #fd9300;
+}
+
+.active-pink .fa, .active-pink-4 .fa {
+    color: #fd9300;
+}
+
+#search {
+    margin: 10px 0 20px;
+    border-radius: 10px;
+    padding: 25px 5px;
+    background-color: #5c69f2;
+}
+
+#search {
+    color: #ffffff;
+}
+
+#searchForm input {
+    margin-bottom: 0;
+}
+
+#searchForm select {
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.workoutContainer {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+thead {
+    width: 100%;
+    text-align: center;
+    background-color: #fd9300;
+    border-radius: 10px 10px 0 0;
+    font-size: 23px;
+    font-weight: 700;
+    padding: 27px 0 10px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+thead .favAbsolute {
+    position: relative;
+    width: 100%;
+    padding: 0 92px;
+}
+
+.buttonUpdate {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    right: -7%;
+    font-size: 12px;
+}
+
+thead i {
+    content: "\f005";
+    font-size: 25px;
+}
+
+thead i:hover {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+tr, th, td {
+    width: 100%;
+}
+
+.numberFavorite {
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 12px;
+}
+
+tbody {
+    padding: 10px 5px;
+}
+
+tbody .row-tr {
+    flex-direction: row;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+tbody tr:first-child {
+    margin-bottom: 15px;
+}
+
+tbody td i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+tbody td .fa-bullseye {
+    color: #ed716d;
+}
+
+tbody td .fa-dumbbell {
+    color: #f19d4b;
+}
+
+tbody td .fa-fist-raised {
+    color: #5fbb74;
+}
+
+tbody td .fa-hourglass-start {
+    color: #678eeb;
+}
+
+.exercise-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    padding: 15px 0;
+}
+
+p[class*="repetitionNumber"] {
+    margin-left: 10px;
+    margin-right: 7px;
+    font-weight: 700;
+}
+
+.exercise-container p {
+    text-align: left;
+}
+
+.exercise-container:not(:first-child) {
+    border-top: 2px solid #ff7615;
+}
+
+.titleExercise {
+    padding: 12px 0;
+    font-size: 22px;
+    font-weight: 700;
+    background-color: #fd9300;
+    width: 87%;
+    border-radius: 20px;
+    margin: 17px 0 10px;
+    color: #ffffff;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #5c69f2;
+    border-color: #5c69f2;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #1627d8;
+    border-color: #1627d8;
+}
+
+.bigTitle {
+    background-color: #5c69f2;
+    padding: 10px 0;
+    color: white;
+    border-radius: 13px;
+    font-weight: 700;
+    margin: 10px 0 20px 0;
+}
+
+#showCreation:hover {
+    cursor: pointer;
+    background-color: #359035;
+}
+
+.fa-star {
+    color: #efff00;
+}
+
+.fas .fa-star {
+    font-size: 30px;
+}
+
+.numberSerie {
+    color: #3b4cff;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.buttonDelete, .buttonDeleteFavorite {
+    margin-top: 15px;
+}
+
+.favoriteAmount {
+    font-weight: 900;
+    color: #3b4cff;
+    font-size: 17px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.buttonValidateUpdate {
+    width: 100%;
+}
+
+.updateTable {
+    margin: 0 15px;
+}

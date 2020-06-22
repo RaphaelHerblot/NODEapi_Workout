@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="./assets/fontawesome-free-5.13.1-web/css/all.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <header>
+            <div id="title">
+                <h1><a href="/">Workout<span>Party</span></a></h1>
+            </div>
+            <div id="navigation">
+                <button id="favoriteButton" onClick="javascript:window.location.href='/pages/favorites.html'" class="btn btn-primary">Favoris</button>
+                <button id="profilButton" onClick="javascript:window.location.href='/pages/profil.html'" class="btn btn-primary">Profil</button>
+                <button id="disconnect" class="btn btn-danger" type="submit">X</button>
+            </div>
+        </header>
+
+        <main>
+            <div id="user">
+                <h2 id="hiStranger"></h2>
+                <h2 id="index"></h2>
+                <h2 id="notification"></h2>
+            </div>
+
+            <div id="login" class="form-group div-group">
+                <h2>Connexion</h2>
+                <form id="loginForm">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="emailLogin" class="form-control">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" name="password" id="passwordLogin" class="form-control">
+                    <button type="sumbit" class="btn btn-secondary">Connexion</button>
+                </form>
+            </div>
+
+            <div id="register" class="form-group div-group">
+                <h2>Inscription</h2>
+                <form id="registerForm" action="#">
+                    <label for="pseudo">Nom</label>
+                    <input type="text" name="name" id="name" class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" class="form-control">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" name="password" id="password" class="form-control">
+                    <button type="sumbit" class="btn btn-secondary">Register</button>
+                </form>
+            </div>
+
+            <div id="search">
+                <h2><i class="fas fa-dumbbell"></i> Rechercher un workout <i class="fas fa-dumbbell"></i></h2>
+                <form id="searchForm" action="#" class="form-inline active-pink-4">
+                    <select name="searchType" id="searchType" class="form-control">
+                        <option value="title">Filtrer</option>
+                        <option value="title">Nom</option>
+                        <option value="description">Description</option>
+                        <option value="goal">But</option>
+                        <option value="muscle">Muscle</option>
+                    </select> 
+                    <input class="form-control mr-3 w-75" type="text" name="searchData" id="searchData" placeholder="Rechercher" aria-label="Search">
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+
+            <section id="searchList">
+            </section>
+
+            <div id="showCreation"><p>Tu veux créer ton propre workout ? <span>Alors clique !</span></p></div>
+
+            <div id="workout" class="form-group div-group" style="display: none">
+                <h2>Créer ton propre workout</h2>
+                <form id="workoutForm" action="#">
+                    <label for="titleWorkout"><i class="fas fa-signature"></i> Nom</label>
+                    <input type="text" name="titleWorkout" id="titleWorkout" placeholder="Donne un nom à ton workout" class="form-control">
+                    <label for="descriptionWorkout"><i class="far fa-bookmark"></i> Description</label>
+                    <input type="text" name="descriptionWorkout" id="descriptionWorkout" placeholder="Ajoute une super description" class="form-control">
+                    <label for="goalWorkout"><i class="fas fa-bullseye"></i> But du workout</label>
+                    <input type="text" name="goalWorkout" id="goalWorkout" placeholder="Devenir Dwayne Johnson ?" class="form-control">
+                    <label for="durationWorkout"><i class="fas fa-hourglass-start"></i> Durée moyenne</label>
+                    <input type="text" name="durationWorkout" id="durationWorkout" placeholder="Plutôt 10 ou 120 minutes" class="form-control">
+                    <label for="muscleWorkout"><i class="fas fa-fist-raised"></i> Muscles concernés</label>
+                    <input type="text" name="muscleWorkout" id="muscleWorkout" placeholder="Pectoraux, triceps, abdos..." class="form-control">
+                    <label for="equipementWorkout"><i class="fas fa-dumbbell"></i> Equipement</label>
+                    <input type="text" name="equipementWorkout" id="equipementWorkout" placeholder="Des poids, une barre de traction..." class="form-control">
+                    <label for="seriesWorkout"><i class="fas fa-sort-numeric-down"></i> Nombre de série</label>
+                    <input type="text" name="seriesWorkout" id="seriesWorkout" placeholder="On recommence 100 fois !" class="form-control">
+                    <label for="content"><i class="fas fa-running"></i> Exercises</label>
+                    <select name="exerciseWorkout" id="exerciseWorkout" class="form-control">
+                    </select>
+                    <div id="nbRepetition"></div>
+                    <button  id="buttonWorkout" class="btn btn-primary" type="submit">Terminer</button>
+                </form>
+            </div>
+
+            <h2 class="workoutMoment bigTitle">Workouts du moment</h2>
+            <div id="listWorkout"></div>
+
+        </main>
+
+        <script src="./js/fetchClass.js"></script>
+        <script src="./js/app.js"></script>
+    </body>
+</html>
